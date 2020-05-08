@@ -10,7 +10,7 @@
  						<button type="button" class="btn btn-info "style="font-size:10px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-angle-double-down"></span>
 						</button>
 				  		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="viewDetail.php?blk=A">View Detail</a>
+						    <a class="dropdown-item" href="Process/selectedblock.php?blk=A">View Detail</a>
 						    <a class="dropdown-item" href="insertDetail.php?blk=A">Insert Detail</a>
 						    <a class="dropdown-item" href="#">Maintanence</a>
 				 	 	</div>
@@ -26,7 +26,7 @@
  						<button type="button" class="btn btn-info"style="font-size:10px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-angle-double-down"></span>
 						</button>
 				  		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="viewDetail.php?blk=B">View Detail</a>
+						    <a class="dropdown-item" href="Process/selectedblock.php?blk=B">View Detail</a>
 						    <a class="dropdown-item" href="insertDetail.php?blk=B">Insert Detail</a>
 						    <a class="dropdown-item" href="#">Maintanence</a>
 				 	 	</div>

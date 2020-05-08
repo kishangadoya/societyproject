@@ -15,7 +15,7 @@
 				<div class="form-group">
 					<form action="#" method="post">	
 						<select class="custom-select" name="blkoption" id="blkoption">
-								<option value="*">All Blocks</option>
+								<option selected="selected" disabled="disabled">--SELECT--</option>
 								<option value="A">A</option>
 								<option value="B">B</option>
 								<option value="C">C</option>
@@ -56,6 +56,7 @@
 				<thead>
 					<tr>
 						<th scope="col">Id</th>
+						<th scope="col">Block</th>
 						<th scope="col">Floor</th>
 						<th scope="col">Flat</th>
 						<th scope="col">Owner Name</th>
@@ -72,27 +73,24 @@
 </section>
 
 <script>
-$(document).ready(function(){
-	$("#blkoption").on('change',function(){
-		var value = $(this).val()
-		console.log(value)
-		$.ajax({
-			method:"POST",
-			url:"Process/selectedblock.php",
-			data: {
-               'blkoption': value,
-            },
-			dataType:'html',
-			success:function(data){
-				$("#heading").html(value);
-				$("#tbody").html(data);
-			}
+	$(document).ready(function(){
+		$("#blkoption").on('change',function(){
+			var value = $(this).val()
+			$.ajax({
+				method:"POST",
+				url:"Process/selectedblock.php",
+				data: {
+	               'blkoption': value,
+	            },
+				dataType:'html',
+				success:function(data){
+					$("#heading").html(value);
+					$("#tbody").html(data);
+				}
+			});
 		});
+
 	});
-
-});
-
-
 </script>
 <?php 
 include 'footer.php';

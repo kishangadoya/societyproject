@@ -72,7 +72,7 @@ include 'header.php';
 	{
 		?>
 		<script>
-			document.getElementById("toast-body").innerHTML = 'Data inserted  &nbsp;<a href="viewDetail.php?blk=<?php echo $_GET['blk'];?>">View</a>';
+			document.getElementById("toast-body").innerHTML = 'Data inserted  &nbsp;<a href="selectedblock.php?blk=<?php echo $_GET['blk'];?>">View</a>';
 			document.getElementById("toast").style.display='block';
 			setTimeout(function(){
 				document.getElementById("toast").style.display='none';
